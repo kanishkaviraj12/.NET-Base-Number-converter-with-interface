@@ -33,6 +33,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>C:\Users\Kanishka Viraj\Downloads\Compressed\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>C:\Users\Kanishka Viraj\Downloads\Compressed\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>C:\Users\Kanishka Viraj\Downloads\Compressed\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>C:\Users\Kanishka Viraj\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\bin\Debug\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>C:\Users\Kanishka Viraj\Downloads\Compressed\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
     <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
@@ -40,6 +55,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -71,6 +87,12 @@
     <Compile Include="Forms\About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Setting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +122,9 @@
     <EmbeddedResource Include="Forms\BaseConverter.resx">
       <DependentUpon>BaseConverter.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Help.resx">
       <DependentUpon>Help.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +142,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -131,6 +157,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mc-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\833432.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-btn-demo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max-btn-demo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mc-green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mc-yellw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Programming-Delete-Sign-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign-error-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign-error-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usability testing-amico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-gif-maker %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The-simple-math-behind-decimal-binary-conversion-algorithms-4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

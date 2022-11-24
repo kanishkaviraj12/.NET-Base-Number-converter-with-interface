@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
+using ComponentFactory.Krypton.Toolkit;
 
 namespace Number_converter_interface
 {
-    public partial class Form1 : Form
+    public partial class Form1 : KryptonForm
     {
         //fields
         private IconButton currentBtn;
@@ -23,13 +24,14 @@ namespace Number_converter_interface
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 60);
+            leftBorderBtn.Size = new Size(7, 45);
             panelMenu.Controls.Add(leftBorderBtn);
             //Form
-            this.Text = string.Empty;
-            this.ControlBox = false;
-            this.DoubleBuffered = true;
-            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
+           //this.Text = string.Empty;
+           // this.ControlBox = false;
+           //this.DoubleBuffered = true;
+           //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
         //Structs
         private struct RGBColors
@@ -49,7 +51,7 @@ namespace Number_converter_interface
                 DisableButton();
                 //Button
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(37, 36, 81);
+                currentBtn.BackColor = Color.FromArgb(37, 36, 81); 
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -181,6 +183,11 @@ namespace Number_converter_interface
         }
 
         private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
         {
 
         }

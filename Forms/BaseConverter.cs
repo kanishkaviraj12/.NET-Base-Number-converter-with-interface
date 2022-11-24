@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ComponentFactory.Krypton.Toolkit;
 
 namespace Number_converter_interface.Forms
 {
-    public partial class BaseConverter : Form
+    public partial class BaseConverter : KryptonForm
     {
         public BaseConverter()
         {
@@ -75,6 +76,21 @@ namespace Number_converter_interface.Forms
 
 
             }
+            else if (Convert.ToBoolean(textBox1.Text == string.Empty))
+            {   
+                
+                MessageBox.Show("Please input a number !");
+            }
+
+          /* else if (Convert.ToBoolean(Convert.ToInt32(textBox1.Text == string.Empty)))
+            {
+                MessageBox.Show("Please input a number !");
+            } */
+
+            else
+            {
+                MessageBox.Show("Choose Correct Base Value !");
+            }
 
         }
 
@@ -135,6 +151,18 @@ namespace Number_converter_interface.Forms
                 dataGridView1.DataSource = dt;
 
             }
+
+            else if (Convert.ToBoolean(textBox1.Text == string.Empty))
+            {
+
+                MessageBox.Show("Please input a number !");
+            }
+
+            else
+            {
+                MessageBox.Show("Choose Correct Base Value !");
+            }
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -181,6 +209,18 @@ namespace Number_converter_interface.Forms
                 dataGridView1.DataSource = dt;
 
             }
+
+            else if (Convert.ToBoolean(textBox1.Text == string.Empty))
+            {
+
+                MessageBox.Show("Please input a number !");
+            }
+
+            else
+            {
+                MessageBox.Show("Choose Correct Base Value !");
+            }
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -279,6 +319,18 @@ namespace Number_converter_interface.Forms
                 dataGridView1.DataSource = dt;
 
             }
+
+            else if (Convert.ToBoolean(textBox1.Text == string.Empty))
+            {
+
+                MessageBox.Show("Please input a number !");
+            }
+
+            else
+            {
+                MessageBox.Show("Choose Correct Base Value !");
+            }
+
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -297,6 +349,36 @@ namespace Number_converter_interface.Forms
 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.DataSource = dt;
+        }
+
+        private void kryptonPalette1_PalettePaint(object sender, PaletteLayoutEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
