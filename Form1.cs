@@ -29,7 +29,7 @@ namespace Number_converter_interface
             //Form
 
            //this.Text = string.Empty;
-           // this.ControlBox = false;
+           //this.ControlBox = false;
            //this.DoubleBuffered = true;
            //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
@@ -190,6 +190,12 @@ namespace Number_converter_interface
         private void panelDesktop_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+            OpenChildForm(new Forms.Home());
         }
     }
 }

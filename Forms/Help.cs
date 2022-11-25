@@ -16,5 +16,12 @@ namespace Number_converter_interface.Forms
         {
             InitializeComponent();
         }
+
+        private void Help_Load(object sender, EventArgs e)
+        {
+            string filePath = (Application.StartupPath + "\\Help" + "\\project proposal.pdf");//location of pdf
+            //openfile(filePath);
+            axAcroPDF1.LoadFile(filePath);
+        }
     }
 }
