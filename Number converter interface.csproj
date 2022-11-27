@@ -222,5 +222,8 @@
   <ItemGroup>
     <None Include="Resources\10808.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-gif-maker %2810%29.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

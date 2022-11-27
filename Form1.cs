@@ -197,5 +197,10 @@ namespace Number_converter_interface
             
             OpenChildForm(new Forms.Home());
         }
+
+        private void kryptonPalette1_PalettePaint(object sender, PaletteLayoutEventArgs e)
+        {
+
+        }
     }
 }

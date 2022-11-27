@@ -40,58 +40,80 @@ namespace Number_converter_interface.Forms
                 }
                 textBox2.Text = (result);
                 */
-                int decimalValue = int.Parse(textBox1.Text);
-                int convertnumber = Convert.ToInt32(decimalValue.ToString(), 10);
-                textBox2.Text = (Convert.ToString(convertnumber, 2));
+                
+                if(textBox1.Text == "")
+                {
+                    MessageBox.Show("Please input a number !");
+                }
 
-                string outputBase = "Binary Number";
-                string printedArrow = "     --------->>";
+                else
+                {
+                    int decimalValue = int.Parse(textBox1.Text);
+                    int convertnumber = Convert.ToInt32(decimalValue.ToString(), 10);
+                    textBox2.Text = (Convert.ToString(convertnumber, 2));
 
-                dt.Rows.Add(textBox1.Text, radioButton3.Text, printedArrow, textBox2.Text, outputBase);
-                dataGridView1.DataSource = dt;
+                    string outputBase = "Binary Number";
+                    string printedArrow = "     --------->>";
+
+                    dt.Rows.Add(textBox1.Text, radioButton3.Text, printedArrow, textBox2.Text, outputBase);
+                    dataGridView1.DataSource = dt;
+                }
+
+                
 
             }
 
             else if (radioButton2.Checked)
             {
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Please input a number !");
+                }
 
-                int octalValue = int.Parse(textBox1.Text);
-                int convertnumber = Convert.ToInt32(octalValue.ToString(), 8);
-                textBox2.Text = (Convert.ToString(convertnumber, 2));
+                else
+                {
+                    int octalValue = int.Parse(textBox1.Text);
+                    int convertnumber = Convert.ToInt32(octalValue.ToString(), 8);
+                    textBox2.Text = (Convert.ToString(convertnumber, 2));
 
-                string outputBase = "Binary Number";
-                string printedArrow = "     --------->>";
+                    string outputBase = "Binary Number";
+                    string printedArrow = "     --------->>";
 
-                dt.Rows.Add(textBox1.Text, radioButton2.Text, printedArrow, textBox2.Text, outputBase);
-                dataGridView1.DataSource = dt;
+                    dt.Rows.Add(textBox1.Text, radioButton2.Text, printedArrow, textBox2.Text, outputBase);
+                    dataGridView1.DataSource = dt;
+                }
 
             }
 
             else if (radioButton4.Checked)
             {
-                string hexValue = Convert.ToString(textBox1.Text);
-                int convertnumber = Convert.ToInt32(hexValue.ToString(), 16);
-                textBox2.Text = (Convert.ToString(convertnumber, 2));
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Please input a number !");
+                }
 
-                string outputBase = "Binary Number";
-                string printedArrow = "     --------->>";
+                else
+                {
+                    string hexValue = Convert.ToString(textBox1.Text);
+                    int convertnumber = Convert.ToInt32(hexValue.ToString(), 16);
+                    textBox2.Text = (Convert.ToString(convertnumber, 2));
 
-                dt.Rows.Add(textBox1.Text, radioButton4.Text, printedArrow, textBox2.Text, outputBase);
-                dataGridView1.DataSource = dt;
+                    string outputBase = "Binary Number";
+                    string printedArrow = "     --------->>";
+
+                    dt.Rows.Add(textBox1.Text, radioButton4.Text, printedArrow, textBox2.Text, outputBase);
+                    dataGridView1.DataSource = dt;
+                }
+                
 
 
             }
             else if (Convert.ToBoolean(textBox1.Text == string.Empty))
-            {   
-                
-                MessageBox.Show("Please input a number !");
-            }
-
-          /* else if (Convert.ToBoolean(Convert.ToInt32(textBox1.Text == string.Empty)))
             {
                 MessageBox.Show("Please input a number !");
-            } */
 
+            }
+            
             else
             {
                 MessageBox.Show("Choose Correct Base Value !");
@@ -103,15 +125,25 @@ namespace Number_converter_interface.Forms
         {
             if (radioButton1.Checked)
             {
-                int binaryValue = int.Parse(textBox1.Text);
-                int convertnumber = Convert.ToInt32(binaryValue.ToString(), 2);
-                textBox2.Text = (Convert.ToString(convertnumber, 8));
 
-                string outputBase = "Octal Number";
-                string printedArrow = "     --------->>";
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Please input a number !");
+                }
 
-                dt.Rows.Add(textBox1.Text, radioButton1.Text, printedArrow, textBox2.Text, outputBase);
-                dataGridView1.DataSource = dt;
+                else
+                {
+                    int binaryValue = int.Parse(textBox1.Text);
+                    int convertnumber = Convert.ToInt32(binaryValue.ToString(), 2);
+                    textBox2.Text = (Convert.ToString(convertnumber, 8));
+
+                    string outputBase = "Octal Number";
+                    string printedArrow = "     --------->>";
+
+                    dt.Rows.Add(textBox1.Text, radioButton1.Text, printedArrow, textBox2.Text, outputBase);
+                    dataGridView1.DataSource = dt;
+                }
+                
 
 
             }
@@ -130,30 +162,49 @@ namespace Number_converter_interface.Forms
                 textBox2.Text = (result);
                 */
 
-                int decimalValue = int.Parse(textBox1.Text);
-                int convertnumber = Convert.ToInt32(decimalValue.ToString(), 10);
-                textBox2.Text = (Convert.ToString(convertnumber, 8));
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Please input a number !");
+                }
 
-                string outputBase = "Octal Number";
-                string printedArrow = "     --------->>";
+                else
+                {
+                    int decimalValue = int.Parse(textBox1.Text);
+                    int convertnumber = Convert.ToInt32(decimalValue.ToString(), 10);
+                    textBox2.Text = (Convert.ToString(convertnumber, 8));
 
-                dt.Rows.Add(textBox1.Text, radioButton3.Text, printedArrow, textBox2.Text, outputBase);
-                dataGridView1.DataSource = dt;
+                    string outputBase = "Octal Number";
+                    string printedArrow = "     --------->>";
+
+                    dt.Rows.Add(textBox1.Text, radioButton3.Text, printedArrow, textBox2.Text, outputBase);
+                    dataGridView1.DataSource = dt;
+                }
+              
 
             }
 
 
             else if (radioButton4.Checked)
             {
-                string hexValue = Convert.ToString(textBox1.Text);
-                int convertnumber = Convert.ToInt32(hexValue.ToString(), 16);
-                textBox2.Text = (Convert.ToString(convertnumber, 8));
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Please input a number !");
+                }
 
-                string outputBase = "Octal Number";
-                string printedArrow = "     --------->>";
+                else
+                {
+                    string hexValue = Convert.ToString(textBox1.Text);
+                    int convertnumber = Convert.ToInt32(hexValue.ToString(), 16);
+                    textBox2.Text = (Convert.ToString(convertnumber, 8));
 
-                dt.Rows.Add(textBox1.Text, radioButton4.Text, printedArrow, textBox2.Text, outputBase);
-                dataGridView1.DataSource = dt;
+                    string outputBase = "Octal Number";
+                    string printedArrow = "     --------->>";
+
+                    dt.Rows.Add(textBox1.Text, radioButton4.Text, printedArrow, textBox2.Text, outputBase);
+                    dataGridView1.DataSource = dt;
+                }
+
+                
 
             }
 
@@ -174,44 +225,70 @@ namespace Number_converter_interface.Forms
         {
             if (radioButton1.Checked)
             {
-                int binaryValue = int.Parse(textBox1.Text);
-                int decimalValue = Convert.ToInt32(binaryValue.ToString(), 2);
-                textBox2.Text = decimalValue.ToString();
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Please input a number !");
+                }
 
-                string outputBase = "Decimal Number";
-                string printedArrow = "     --------->>";
+                else
+                {
+                    int binaryValue = int.Parse(textBox1.Text);
+                    int decimalValue = Convert.ToInt32(binaryValue.ToString(), 2);
+                    textBox2.Text = decimalValue.ToString();
 
-                dt.Rows.Add(textBox1.Text, radioButton1.Text, printedArrow, textBox2.Text, outputBase);
-                dataGridView1.DataSource = dt;
+                    string outputBase = "Decimal Number";
+                    string printedArrow = "     --------->>";
+
+                    dt.Rows.Add(textBox1.Text, radioButton1.Text, printedArrow, textBox2.Text, outputBase);
+                    dataGridView1.DataSource = dt;
+                }
 
             }
 
             else if (radioButton2.Checked)
             {
-                int octalValue = int.Parse(textBox1.Text);
-                int convertnumber = Convert.ToInt32(octalValue.ToString(), 8);
-                textBox2.Text = (Convert.ToString(convertnumber, 10));
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Please input a number !");
+                }
 
-                string outputBase = "Decimal Number";
-                string printedArrow = "     --------->>";
+                else
+                {
+                    int octalValue = int.Parse(textBox1.Text);
+                    int convertnumber = Convert.ToInt32(octalValue.ToString(), 8);
+                    textBox2.Text = (Convert.ToString(convertnumber, 10));
 
-                dt.Rows.Add(textBox1.Text, radioButton2.Text, printedArrow, textBox2.Text, outputBase);
-                dataGridView1.DataSource = dt;
+                    string outputBase = "Decimal Number";
+                    string printedArrow = "     --------->>";
 
+                    dt.Rows.Add(textBox1.Text, radioButton2.Text, printedArrow, textBox2.Text, outputBase);
+                    dataGridView1.DataSource = dt;
+                }
 
             }
 
             else if (radioButton4.Checked)
             {
-                string hexValue = Convert.ToString(textBox1.Text);
-                int convertnumber = Convert.ToInt32(hexValue.ToString(), 16);
-                textBox2.Text = (Convert.ToString(convertnumber, 10));
 
-                string outputBase = "Decimal Number";
-                string printedArrow = "     --------->>";
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Please input a number !");
+                }
 
-                dt.Rows.Add(textBox1.Text, radioButton4.Text, printedArrow, textBox2.Text, outputBase);
-                dataGridView1.DataSource = dt;
+                else
+                {
+                    string hexValue = Convert.ToString(textBox1.Text);
+                    int convertnumber = Convert.ToInt32(hexValue.ToString(), 16);
+                    textBox2.Text = (Convert.ToString(convertnumber, 10));
+
+                    string outputBase = "Decimal Number";
+                    string printedArrow = "     --------->>";
+
+                    dt.Rows.Add(textBox1.Text, radioButton4.Text, printedArrow, textBox2.Text, outputBase);
+                    dataGridView1.DataSource = dt;
+                }
+
+                
 
             }
 
@@ -285,43 +362,75 @@ namespace Number_converter_interface.Forms
 
             if (radioButton1.Checked)
             {
-                int binaryValue = int.Parse(textBox1.Text);
-                int convertnumber = Convert.ToInt32(binaryValue.ToString(), 2);
-                textBox2.Text = (Convert.ToString(convertnumber, 16));
 
-                string outputBase = "Hex Number";
-                string printedArrow = "     --------->>";
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Please input a number !");
+                }
 
-                dt.Rows.Add(textBox1.Text, radioButton1.Text, printedArrow, textBox2.Text, outputBase);
-                dataGridView1.DataSource = dt;
+                else
+                {
+                    int binaryValue = int.Parse(textBox1.Text);
+                    int convertnumber = Convert.ToInt32(binaryValue.ToString(), 2);
+                    textBox2.Text = (Convert.ToString(convertnumber, 16));
+
+                    string outputBase = "Hex Number";
+                    string printedArrow = "     --------->>";
+
+                    dt.Rows.Add(textBox1.Text, radioButton1.Text, printedArrow, textBox2.Text, outputBase);
+                    dataGridView1.DataSource = dt;
+                }
+
+                
 
             }
 
             else if (radioButton3.Checked)
             {
-                int decimalValue = int.Parse(textBox1.Text);
-                string converrtnumber = Convert.ToString(decimalValue, 16);
-                textBox2.Text = converrtnumber;
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Please input a number !");
+                }
 
-                string outputBase = "Hex Number";
-                string printedArrow = "     --------->>";
+                else
+                {
+                    int decimalValue = int.Parse(textBox1.Text);
+                    string converrtnumber = Convert.ToString(decimalValue, 16);
+                    textBox2.Text = converrtnumber;
 
-                dt.Rows.Add(textBox1.Text, radioButton3.Text, printedArrow, textBox2.Text, outputBase);
-                dataGridView1.DataSource = dt;
+                    string outputBase = "Hex Number";
+                    string printedArrow = "     --------->>";
+
+                    dt.Rows.Add(textBox1.Text, radioButton3.Text, printedArrow, textBox2.Text, outputBase);
+                    dataGridView1.DataSource = dt;
+                }
+
+                
 
             }
 
             else if (radioButton2.Checked)
             {
-                int octalValue = int.Parse(textBox1.Text);
-                int convertnumber = Convert.ToInt32(octalValue.ToString(), 8);
-                textBox2.Text = (Convert.ToString(convertnumber, 16));
 
-                string outputBase = "Hex Number";
-                string printedArrow = "     --------->>";
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Please input a number !");
+                }
 
-                dt.Rows.Add(textBox1.Text, radioButton2.Text, printedArrow, textBox2.Text, outputBase);
-                dataGridView1.DataSource = dt;
+                else
+                {
+                    int octalValue = int.Parse(textBox1.Text);
+                    int convertnumber = Convert.ToInt32(octalValue.ToString(), 8);
+                    textBox2.Text = (Convert.ToString(convertnumber, 16));
+
+                    string outputBase = "Hex Number";
+                    string printedArrow = "     --------->>";
+
+                    dt.Rows.Add(textBox1.Text, radioButton2.Text, printedArrow, textBox2.Text, outputBase);
+                    dataGridView1.DataSource = dt;
+                }
+
+                
 
             }
 

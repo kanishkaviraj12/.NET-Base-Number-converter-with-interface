@@ -19,9 +19,14 @@ namespace Number_converter_interface.Forms
 
         private void Help_Load(object sender, EventArgs e)
         {
-            string filePath = (Application.StartupPath + "\\Help" + "\\project proposal.pdf");//location of pdf
+            string filePath = (Application.StartupPath + "\\Help" + "\\image help.pdf");//location of pdf
             //openfile(filePath);
             axAcroPDF1.LoadFile(filePath);
+        }
+
+        private void axAcroPDF1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -93,6 +93,16 @@ namespace Number_converter_interface.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ezgif_com_gif_maker__10_ {
+            get {
+                object obj = ResourceManager.GetObject("ezgif.com-gif-maker (10)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ezgif_com_gif_maker__7_ {
             get {
                 object obj = ResourceManager.GetObject("ezgif.com-gif-maker (7)", resourceCulture);

@@ -16,5 +16,10 @@ namespace Number_converter_interface.Forms
         {
             InitializeComponent();
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
