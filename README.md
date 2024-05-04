@@ -13,7 +13,7 @@ https://github.com/kanishkaviraj12/.NET-Base-Number-converter-with-interface/ass
 
 <div align="center">
     <img src="https://skillicons.dev/icons?i=cs,dotnet" /><br>
-    <img src="https://skillicons.dev/icons?i=" />
+    <img src="https://skillicons.dev/icons?i=visualstudio"/>
 </div>
 
 
