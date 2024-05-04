@@ -7,14 +7,13 @@
 ## About The Project
 <p> In this project,when the user enters an input and selects the base (2->8, 2->10, 2->16,) to be converted and clicks the convert button,it will be converted into the corresponding base. Also, from this project, the values and solutions entered by the user can be obtained.</p><br>
 
-![1](https://github.com/kanishkaviraj12/Food-Dilivery-Service/assets/74193616/fa473d03-5344-4070-a10f-66080e411701)
-![2](https://github.com/kanishkaviraj12/Food-Dilivery-Service/assets/74193616/fcc4d0e1-3923-4926-ba8e-b8f438b96792)
+https://github.com/kanishkaviraj12/.NET-Base-Number-converter-with-interface/assets/74193616/a4cda5f6-b41a-4281-9f20-baa3b64e4126
 
 ### Built With
 
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=javascript,mysql" /><br>
-    <img src="https://skillicons.dev/icons?i=html,css,php" />
+    <img src="https://skillicons.dev/icons?i=c,.net" /><br>
+    <img src="https://skillicons.dev/icons?i=" />
 </div>
 
 
